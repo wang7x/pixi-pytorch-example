@@ -29,4 +29,5 @@ pytorch-cpu = "*"
 
 [environments]
 cpu = ["cpu"]
+gpu = ["gpu"]
 default = ["gpu"]

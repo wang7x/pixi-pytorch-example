@@ -59,10 +59,10 @@ GPU addition successful | Device: cuda:0
 Switch between environments:
 ```bash
 # Use CPU-only environment
-pixi activate cpu
+pixi shell -e cpu
 
 # Use GPU environment (default)
-pixi activate gpu
+pixi shell -e gpu
 ```
 
 ## Key Dependencies
@@ -85,7 +85,9 @@ If GPU isn't detected:
 
 For CPU-only installations:
 ```bash
-pixi activate cpu
+pixi run -e cpu check-pytorch
+# or
+pixi shell -e cpu
 pixi run check-pytorch
 ```
 
